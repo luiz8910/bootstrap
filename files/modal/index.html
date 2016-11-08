@@ -67,24 +67,34 @@
             <div class="container">
                 <div class="row">
 
-                    <h1>PopOver</h1>
+                    <h1>Modal</h1>
 
-                    <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
-                        Popover on left
+                    <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#myModal">
+                        My Modal
                     </button>
 
-                    <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
-                        Popover on top
-                    </button>
+                    <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    <h4 class="modal-title">Modal Title</h4>
+                                </div>
 
-                    <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus
-sagittis lacus vel augue laoreet rutrum faucibus.">
-                        Popover on bottom
-                    </button>
+                                <div class="modal-body">
+                                    <p>One fine body&hellip;</p>
+                                </div>
 
-                    <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
-                        Popover on right
-                    </button>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-success">Save</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
 
                 </div>
 
@@ -100,10 +110,5 @@ sagittis lacus vel augue laoreet rutrum faucibus.">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
-<script>
-    $(function () {
-        $('[data-toggle="popover"]').popover()
-    });
-</script>
 </body>
 </html>
